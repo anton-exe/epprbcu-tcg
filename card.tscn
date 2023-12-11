@@ -1,0 +1,83 @@
+[gd_scene load_steps=2 format=3 uid="uid://gd8la66vwhp6"]
+
+[ext_resource type="Script" path="res://Card.gd" id="1_mjmv0"]
+
+[node name="Card" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 320.0
+offset_bottom = 475.0
+script = ExtResource("1_mjmv0")
+
+[node name="NameBG" type="ColorRect" parent="."]
+layout_mode = 2
+offset_right = 320.0
+offset_bottom = 50.0
+size_flags_vertical = 3
+color = Color(0.16, 0.16, 0.16, 1)
+
+[node name="Name" type="Label" parent="NameBG"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -13.0
+offset_right = -10.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_top = 50.0
+offset_right = 320.0
+offset_bottom = 260.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+
+[node name="DescBG" type="ColorRect" parent="."]
+layout_mode = 2
+offset_top = 260.0
+offset_right = 320.0
+offset_bottom = 420.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+color = Color(0.835294, 0.835294, 0.835294, 1)
+
+[node name="Description" type="RichTextLabel" parent="DescBG"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+
+[node name="FooterBG" type="ColorRect" parent="."]
+layout_mode = 2
+offset_top = 420.0
+offset_right = 320.0
+offset_bottom = 475.0
+size_flags_vertical = 3
+color = Color(0.16, 0.16, 0.16, 1)
+
+[node name="Footer" type="Label" parent="FooterBG"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.603922, 0.603922, 0.603922, 1)
+text = "Common"
